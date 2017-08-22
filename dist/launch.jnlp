@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp codebase="file:/C:/Users/Biswajit%20Roy/Documents/ServerAnalyser-master/dist/" href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>Server_Analyser</title>
+        <vendor>HP</vendor>
+        <homepage href="www.twitter.com/@dev_biswajeet"/>
+        <description>Server Analysing Program for monitoring server activity,intrution detection and malware activity.</description>
+        <description kind="short">Server_Analyser</description>
+    <offline-allowed/>
+</information>
+    <update check="background"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se version="1.6+"/>
+        <jar href="Server_Analyser.jar" main="true"/>
+    <jar href="lib/mysql-connector-java-5.1.23-bin.jar"/>
+<jar href="lib/mysql-connector-java-5.1.23-bin.jar"/>
+</resources>
+    <application-desc main-class="server_analyser.Main">
+    </application-desc>
+</jnlp>
