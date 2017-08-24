@@ -91,6 +91,11 @@ public class Options extends javax.swing.JFrame {
 
         jButton6.setText("Manually read packets");
         jButton6.setToolTipText("Manually read packet contents flowing in and out of server.");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Shut down Server");
         jButton7.setToolTipText("Prepares the Server for Shutdown. Use with Caution !");
@@ -102,6 +107,11 @@ public class Options extends javax.swing.JFrame {
 
         jButton8.setText("Admin Discussion forum");
         jButton8.setToolTipText("feel free to report a suspected threat to other admins for a quick resolve");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         lgt.setText("Logout !");
         lgt.setToolTipText("End your administrator session !");
@@ -190,7 +200,7 @@ public class Options extends javax.swing.JFrame {
         if (conf == 0) {
             try {
                 Runtime runtime = Runtime.getRuntime();
-                Process proc = runtime.exec("powershell.exe Start-Process C:\\Users\\HP\\Documents\\response\\Server_Analyser\\src\\server_analyser\\serverdump\\shutd.bat");
+                Process proc = runtime.exec("powershell.exe Start-Process C:\\Users\\Biswajit Roy\\Documents\\ServerAnalyser-master\\src\\server_analyser\\serverdump\\shutd.bat");
             } catch (IOException e) {
                 JOptionPane.showMessageDialog(null, "Error-Server cannot perform Shutdown !\nPotential Security breach !", "Critical Error ! Server Analyser", ERROR_MESSAGE);
             }
@@ -233,7 +243,7 @@ public class Options extends javax.swing.JFrame {
          */
         try {
             Runtime runtime = Runtime.getRuntime();
-            Process proc = runtime.exec("powershell.exe Start-Process C:\\Users\\HP\\Documents\\response\\Server_Analyser\\src\\server_analyser\\serverdump\\begin.vbs");
+            Process proc = runtime.exec("powershell.exe Start-Process C:\\Users\\Biswajit Roy\\Documents\\ServerAnalyser-master\\src\\server_analyser\\serverdump\\begin.vbs");
             proc.waitFor();
             dispose();
             new recordman().setVisible(true);
@@ -259,6 +269,15 @@ pb.start();
         new remadmin().setVisible(true);
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        dispose();
+        new ChatUI().setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
     private void setIcon() {
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("prgicon.png")));
     }

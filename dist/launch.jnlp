@@ -16,7 +16,6 @@
         <j2se version="1.6+"/>
         <jar href="Server_Analyser.jar" main="true"/>
     <jar href="lib/mysql-connector-java-5.1.23-bin.jar"/>
-<jar href="lib/mysql-connector-java-5.1.23-bin.jar"/>
 </resources>
     <application-desc main-class="server_analyser.Main">
     </application-desc>

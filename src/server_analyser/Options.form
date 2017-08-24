@@ -153,6 +153,9 @@
         <Property name="text" type="java.lang.String" value="Manually read packets"/>
         <Property name="toolTipText" type="java.lang.String" value="Manually read packet contents flowing in and out of server."/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
@@ -168,6 +171,9 @@
         <Property name="text" type="java.lang.String" value="Admin Discussion forum"/>
         <Property name="toolTipText" type="java.lang.String" value="feel free to report a suspected threat to other admins for a quick resolve"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="lgt">
       <Properties>
