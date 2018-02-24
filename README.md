@@ -30,11 +30,11 @@ The program requires installation of following before proceeding
 
 ### Running the application from NetBeans IDE 8.0
 
-	##### Prerequisites
+##### Prerequisites
 			
 			- MySQL ConnectorJ
 			
-	##### Finally Running
+##### Finally Running
 			
 			- Select **main.java** and hit `Run` to start execution for the first time only.
 			- Create a shortcut to the program ( `Server_Analyser.jar` ) found inside the `dist` directory for subsequent executions.
