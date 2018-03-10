@@ -40,7 +40,9 @@ The program requires installation of following before proceeding
 			- Create a shortcut to the program ( `Server_Analyser.jar` ) found inside the `dist` directory for subsequent executions.
 			
 	
-	
+##### Read the same on a lucid website
+
+ `https://biswajee.github.io/ServerAnalyser/`
 	
 
 
